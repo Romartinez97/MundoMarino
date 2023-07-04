@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Moluscos</title>
+    <link rel="stylesheet" href="Moluscos.css">
+    <script src="Carrusel.js"></script>
+</head>
+
+<body>
+    <div id="banner">
+        <h1 style="font-size: 3vw">Moluscos</h1>
+        <div id="menu">
+            <a class="opcionMenu" href="../Inicio.html">Inicio</a>
+            |
+            <a class="opcionMenu" href="../Explorar.html">Explorar</a>
+            |
+            <a class="opcionMenu" href="../Quiz.html">Quiz</a>
+            |
+            <a class="opcionMenu" href="../SobreMi.html">Sobre Mí</a>
+            |
+            <a class="opcionMenu" href="../Contacto.html">Contacto</a>
+        </div>
+    </div>
+
+    <div id="info">
+        <h2 id="titulo">Moluscos</h2>
+        <div id="carruselFotos"></div>
+        <script>
+            var $imagenesInicio = [
+                "../Imagenes/CarruselMoluscos/1.jpeg",
+                "../Imagenes/CarruselMoluscos/2.jpg",
+                "../Imagenes/CarruselMoluscos/3.jpg",
+                "../Imagenes/CarruselMoluscos/4.jfif",
+                "../Imagenes/CarruselMoluscos/5.jpeg",
+                "../Imagenes/CarruselMoluscos/6.jpg",
+            ];
+
+            inicializarCarrusel($imagenesInicio);
+        </script>
+        <br>
+        <div>
+            <p>
+                Los moluscos (Mollusca, del latín <span class="cursiva">mollis</span>, "blando") son un filo formado por
+                animales invertebrados de
+                simetría bilateral de cuerpo blando, desnudo o protegido por una concha, que incluye a caracoles,
+                almejas, pulpos, calamares y babosas.
+            </p>
+            <br>
+
+            <p style="display: flex; align-items: center">
+                <img src="../Imagenes/MoluscosConchas.jpg" style="height: 350px; margin-right: 20px"
+                    alt="Ejemplos de moluscos con y sin concha">
+                Una de las características más reconocibles de los moluscos es su concha. Algunos moluscos, como los
+                caracoles y las almejas, tienen una concha externa que les proporciona protección y soporte. Por
+                otro lado, animales como los pulpos y los calamares tienen cuerpos blandos y carecen de concha
+                externa, aunque pueden tener una concha interna en algunos casos o carecer de ella.
+            </p>
+            <p style="display: flex; align-items: center">
+                Otra característica de los moluscos es el pie muscular. Este órgano locomotor está dotado de una
+                musculatura compleja y potente y se diversificó mucho en este grupo de animales a lo largo de la
+                evolución, dando lugar al pie excavador de las almejas,a los tentáculos de los cefalópodos (pulpos y
+                calamares) o el pie nadador de algunos organismos que habitan cerca de la superficie del mar.
+                <img src="../Imagenes/MoluscosPie.jpg" style="height: 300px; margin-left: 20px"
+                    alt="Esquema de la anatomía de diversos moluscos">
+            </p>
+            <br>
+            <p style="display: flex; align-items: center;">
+                <img src="../Imagenes/MoluscosRadula.png" style="height: 400px; margin-right: 20px"
+                    alt="Esquema de la rádula de un caracol">
+                La alimentación de los moluscos es diversa. Algunos moluscos son herbívoros y se alimentan de algas y
+                plantas marinas, mientras que otros son carnívoros y se alimentan de otros invertebrados o pequeños
+                peces. Los moluscos filtradores, como las almejas y los mejillones, se alimentan filtrando partículas de
+                comida del agua. En todos los casos, poseen un órgano de alimentación llamado rádula, similar a una
+                cinta con pequeños dientes, el cual es una característica única del reino animal.
+            </p>
+            <span style="font-size: 13px; position: relative; left: 15px; top: -15px;">Esquema de la rádula de un
+                caracol</span>
+            <br>
+            <p>
+                La reproducción de los moluscos es exclusivamente sexual y varía según la especie; pueden ser
+                unisexuados (hembras y machos) o
+                como en el caso de la mayoría de los caracoles y babosas, hermafroditas con capacidad de autofecundación
+                o sin ella. La fertilización, a su vez, puede ser externa (liberación de las gametas al agua) o interna.
+            </p>
+            <br>
+            <p>
+                Los moluscos son animales importantes en los ecosistemas marinos. Algunos actúan como filtradores,
+                ayudando a limpiar el agua al eliminar partículas en suspensión y nutrientes no deseados. Además, las
+                conchas de los moluscos proporcionan hábitats para otros organismos marinos y contribuyen a la formación
+                de arrecifes.
+            </p>
+            <div style="text-align: center; margin: -5px 0 -5px 0;">
+                <img src="../Imagenes/Ostra.jpg" style="display: inline-block; height: 250px; margin: 10px auto;"
+                    alt="Imágen de una ostra en el fondo del oceano">
+                <img src="../Imagenes/Calamar.jpg" style="display: inline-block; height: 250px; margin: 10px auto;"
+                    alt="Imágen de una ostra en el fondo del oceano">
+            </div>
+            <p>
+                Algunos moluscos, como las ostras y los calamares, también son apreciados por los seres humanos
+                como alimentos y se cultivan en acuicultura. Sin embargo, la sobrepesca y la degradación del hábitat
+                representan amenazas para algunas especies de moluscos, lo que destaca la importancia de la conservación
+                y la gestión sostenible de estos recursos.
+            </p>
+
+            <br><br><br>
+
+            <div id="subtitulo">Moluscos en Argentina</div>
+            <br><br>
+            <div id="contenedorCarruselArg">
+                <div id="carruselArg"></div>
+                <button id="botonAnterior">
+                    <img src="../Imagenes/FlechaDerecha.png"
+                        alt="Imagen de una flecha utilizada para ver la foto anterior">
+                </button>
+                <button id="botonSiguiente">
+                    <img src="../Imagenes/FlechaDerecha.png"
+                        alt="Imagen de una flecha utilizada para ver la foto siguiente">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var $carruselArg = document.getElementById("carruselArg");
+        var $botonAnterior = document.getElementById("botonAnterior");
+        var $botonSiguiente = document.getElementById("botonSiguiente");
+        var $imagenesArg = [
+            "../Imagenes/CarruselMoluscos/7.jpeg",
+            "../Imagenes/CarruselMoluscos/8.jpeg",
+            "../Imagenes/CarruselMoluscos/9.jpeg",
+            "../Imagenes/CarruselMoluscos/10.jpg",
+            "../Imagenes/CarruselMoluscos/11.jpg",
+            "../Imagenes/CarruselMoluscos/12.jpg",
+            "../Imagenes/CarruselMoluscos/13.jpeg",
+            "../Imagenes/CarruselMoluscos/14.jpeg",
+            "../Imagenes/CarruselMoluscos/15.jpg",
+            "../Imagenes/CarruselMoluscos/16.jpg",
+            "../Imagenes/CarruselMoluscos/17.jpg",
+            "../Imagenes/CarruselMoluscos/18.jpeg",
+        ];
+
+        inicializarCarruselInteractivo(
+            $carruselArg,
+            $botonAnterior,
+            $botonSiguiente,
+            $imagenesArg
+        );
+    </script>
+
+    <div id="pie">
+        <span class="datoPie">Copyright 2023 © Mundo Marino</span>
+        |
+        <span class="datoPie"><a href="../ArchivosDelPie/AvisoLegal.html">Aviso Legal</a></span>
+        |
+        <span class="datoPie"><a href="../ArchivosDelPie/PoliticaCookies.html">Política de Cookies</a></span>
+        |
+        <span class="datoPie"><a href="../ArchivosDelPie/PoliticaPrivacidad.html">Política de Privacidad</a></span>
+    </div>
+</body>
+
+</html>

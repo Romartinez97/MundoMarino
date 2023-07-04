@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mamíferos</title>
+  <link rel="stylesheet" href="Mamiferos.css">
+  <script src="Carrusel.js"></script>
+</head>
+
+<body>
+  <div id="banner">
+    <h1 style="font-size: 3vw">Mamíferos</h1>
+    <div id="menu">
+      <a class="opcionMenu" href="../Inicio.html">Inicio</a>
+      |
+      <a class="opcionMenu" href="../Explorar.html">Explorar</a>
+      |
+      <a class="opcionMenu" href="../Quiz.html">Quiz</a>
+      |
+      <a class="opcionMenu" href="../SobreMi.html">Sobre Mí</a>
+      |
+      <a class="opcionMenu" href="../Contacto.html">Contacto</a>
+    </div>
+  </div>
+
+  <div id="info">
+    <h2 id="titulo">Mamíferos</h2>
+    <div id="carruselFotos"></div>
+    <script>
+      var $imagenesInicio = [
+        "../Imagenes/CarruselMamiferos/12.jpg",
+        "../Imagenes/CarruselMamiferos/13.webp",
+        "../Imagenes/CarruselMamiferos/14.jpg",
+        "../Imagenes/CarruselMamiferos/15.jpg",
+        "../Imagenes/CarruselMamiferos/16.webp",
+        "../Imagenes/CarruselMamiferos/17.jpg",
+        "../Imagenes/CarruselMamiferos/18.jpg",
+        "../Imagenes/CarruselMamiferos/19.jpg",
+      ];
+
+      inicializarCarrusel($imagenesInicio);
+    </script>
+    <br>
+    <div>
+      <p>
+        Los mamíferos (Mammalia, del latín <span class="cursiva">mamma</span>,
+        "pecho materno, glándula mamaria") son una clase de animales
+        vertebrados que tienen como característica principal la presencia de
+        glándulas mamarias productoras de leche con las que alimentan a las
+        crías y son los únicos animales actuales con pelo presente en casi
+        todas las etapas de su vida en mayor o menor medida. Este grupo
+        incluye a animales como las ballenas, los delfines, las focas, los
+        leones marinos y los manatíes, entre otros.
+      </p>
+      <br>
+      <div>
+        <p>
+          Una de las características más notables de los mamíferos acuáticos
+          es su adaptación al medio acuático. Han desarrollado cuerpos
+          hidrodinámicos y extremidades modificadas que les permiten
+          desplazarse con eficiencia en el agua. Sus aletas y aletas traseras
+          les brindan propulsión y dirección, lo que les permite nadar
+          rápidamente y realizar movimientos ágiles bajo la superficie.
+          <br>
+          <img src="../Imagenes/MamiferosVarios.png" style="height: 300px; margin: 15px auto 0 auto; display: block"
+            alt="Mosaico de fotos de animales marinos">
+          <br>
+          Los mamíferos acuáticos tienen la capacidad de respirar aire, lo que
+          significa que necesitan salir a la superficie para tomar oxígeno.
+          Algunos, como las ballenas y los delfines, tienen espiráculos o
+          aberturas en la parte superior de su cabeza que les permiten
+          respirar sin tener que sacar todo el cuerpo del agua. Otros, como
+          las focas y los leones marinos, deben salir completamente del agua
+          para respirar.
+        </p>
+      </div>
+      <br>
+      <p>
+        Estos animales también han desarrollado adaptaciones para sobrevivir
+        en ambientes acuáticos fríos. Muchos mamíferos acuáticos tienen una
+        capa gruesa de grasa que les proporciona aislamiento y ayuda a
+        mantener una temperatura corporal constante en las aguas frías.
+        Además, algunos tienen una densidad ósea reducida, lo que les permite
+        ser más livianos y flotar con mayor facilidad.
+      </p>
+
+      <p style="display: flex; align-items: center">
+        <img src="../Imagenes/LeonMarino.jpg" style="height: 400px; margin-right: 15px"
+          alt="Imagen de un león marino alimentándose de peces">
+        Los mamíferos acuáticos son en su mayoría carnívoros, alimentándose de
+        peces, calamares y otros organismos marinos. Algunas especies, como
+        los delfines, utilizan técnicas de caza en grupo para atrapar a sus
+        presas, mientras que otras, como las ballenas, se alimentan filtrando
+        grandes cantidades de agua y filtrando pequeños organismos a través de
+        estructuras especializadas llamadas barbas.
+      </p>
+      <p>
+        En todos los mamíferos se presentan los sexos separados y la
+        reproducción es de tipo vivípara (el embrión se desarrolla en el
+        vientre de la hembra) en su mayoría. El periodo de gestación y el
+        número de crías por camada varían mucho según los grupos. Normalmente,
+        cuanto mayor es el tamaño del animal, más largo es el periodo de
+        gestación y menor el número de crías.
+      </p>
+
+      <figure style="text-align: center">
+        <img src="../Imagenes/Orca.jpg" style="height: 300px; margin: 15px; display: inline-block"
+          alt="Imagen de una orca junto a su cría">
+        <figcaption>
+          Las orcas son uno de los animales con el período de gestación más
+          largo, siendo este de alrededor de 17 meses
+        </figcaption>
+      </figure>
+
+      <br>
+
+      <p>
+        La conservación de los mamíferos acuáticos es crucial debido a las
+        amenazas que enfrentan, como la pérdida de hábitat, la contaminación,
+        la caza y el cambio climático. Estas especies desempeñan un papel
+        importante en los ecosistemas marinos, ayudando a regular las
+        poblaciones de peces y otros organismos.
+      </p>
+
+      <br><br><br>
+
+      <div id="subtitulo">Mamíferos en Argentina</div>
+      <br><br>
+      <div id="contenedorCarruselArg">
+        <div id="carruselArg"></div>
+        <button id="botonAnterior">
+          <img src="../Imagenes/FlechaDerecha.png" alt="Imagen de una flecha utilizada para ver la foto anterior">
+        </button>
+        <button id="botonSiguiente">
+          <img src="../Imagenes/FlechaDerecha.png" alt="Imagen de una flecha utilizada para ver la foto siguiente">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var $carruselArg = document.getElementById("carruselArg");
+    var $botonAnterior = document.getElementById("botonAnterior");
+    var $botonSiguiente = document.getElementById("botonSiguiente");
+    var $imagenesArg = [
+      "../Imagenes/CarruselMamiferos/1.jpeg",
+      "../Imagenes/CarruselMamiferos/2.jpeg",
+      "../Imagenes/CarruselMamiferos/3.jpg",
+      "../Imagenes/CarruselMamiferos/4.jpg",
+      "../Imagenes/CarruselMamiferos/5.jpeg",
+      "../Imagenes/CarruselMamiferos/6.jpeg",
+      "../Imagenes/CarruselMamiferos/7.jpeg",
+      "../Imagenes/CarruselMamiferos/8.jpg",
+      "../Imagenes/CarruselMamiferos/9.jpg",
+      "../Imagenes/CarruselMamiferos/10.jpg",
+      "../Imagenes/CarruselMamiferos/11.jpeg",
+    ];
+
+    inicializarCarruselInteractivo(
+      $carruselArg,
+      $botonAnterior,
+      $botonSiguiente,
+      $imagenesArg
+    );
+  </script>
+
+  <div id="pie">
+    <span class="datoPie">Copyright 2023 © Mundo Marino</span>
+    |
+    <span class="datoPie"><a href="../ArchivosDelPie/AvisoLegal.html">Aviso Legal</a></span>
+    |
+    <span class="datoPie"><a href="../ArchivosDelPie/PoliticaCookies.html">Política de Cookies</a></span>
+    |
+    <span class="datoPie"><a href="../ArchivosDelPie/PoliticaPrivacidad.html">Política de Privacidad</a></span>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Equinodermos</title>
+  <link rel="stylesheet" href="Equinodermos.css">
+  <script src="Carrusel.js"></script>
+</head>
+
+<body>
+  <div id="banner">
+    <h1 style="font-size: 3vw">Equinodermos</h1>
+    <div id="menu">
+      <a class="opcionMenu" href="../Inicio.html">Inicio</a>
+      |
+      <a class="opcionMenu" href="../Explorar.html">Explorar</a>
+      |
+      <a class="opcionMenu" href="../Quiz.html">Quiz</a>
+      |
+      <a class="opcionMenu" href="../SobreMi.html">Sobre Mí</a>
+      |
+      <a class="opcionMenu" href="../Contacto.html">Contacto</a>
+    </div>
+  </div>
+
+  <div id="info">
+    <h2 id="titulo">Equinodermos</h2>
+    <div id="carruselFotos"></div>
+    <script>
+      var $imagenesInicio = [
+        "../Imagenes/CarruselEquinodermos/1.jpg",
+        "../Imagenes/CarruselEquinodermos/2.jpg",
+        "../Imagenes/CarruselEquinodermos/3.jpg",
+        "../Imagenes/CarruselEquinodermos/4.jpg",
+        "../Imagenes/CarruselEquinodermos/5.jpg",
+        "../Imagenes/CarruselEquinodermos/6.webp",
+        "../Imagenes/CarruselEquinodermos/7.jpeg",
+      ];
+
+      inicializarCarrusel($imagenesInicio);
+    </script>
+    <br>
+    <div>
+      <p>
+        Los equinodermos (Echinodermata, del griego
+        <span class="cursiva">ekhino</span>, "púa" y
+        <span class="cursiva">derma</span>, "piel") son un filo de animales
+        exclusivamente marinos y bentónicos (habitan el fondo de los
+        ecosistemas marinos). Este grupo incluye seres como estrellas de mar,
+        erizos de mar, pepinos de mar y lirios de mar.
+      </p>
+      <br>
+      <div style="display: flex; align-items: center">
+        <img src="../Imagenes/Pedicelarios.jfif" style="height: 300px; margin-right: 15px"
+          alt="Imagen de un pedicelario de una estrella de mar">
+        <p>
+          Su nombre alude a su exclusivo esqueleto interno formado por placas
+          de carbonato de calcio llamadas osículos, las cuales les brindan
+          estructura y protección. El grado de desarrollo de estos elementos
+          varía según los grupos: en los erizos de mar los osículos están
+          fuertemente unidos entre sí y forman un caparazón rígido, mientras
+          que en los pepinos de mar los osículos son diminutos y se encuentran
+          dispersos en la dermis.
+          <br><br>
+          Con frecuencia presentan espinas fijas o móviles. Las estrellas y
+          los erizos de mar presentan, además, unas estructuras exclusivas en
+          forma de pinza, llamadas pedicelarios, que tienen diversas
+          funciones, como eliminar restos y larvas que intentan fijarse sobre
+          el cuerpo, defender al animal de los depredadores o participar en la
+          captura de presas.
+        </p>
+      </div>
+      <span style="margin-left: 80px">Pedicelarios de una estrella de mar</span>
+      <br>
+      <p>
+        Salvo las larvas, los equinodermos poseen simetría pentarradial, caso
+        único en el reino animal, donde el cuerpo queda dividido en cinco
+        regiones que se disponen alrededor de un disco central. Esta
+        disposición simétrica les permite moverse y orientarse en cualquier
+        dirección.
+      </p>
+
+      <p style="display: flex; align-items: center">
+        <img src="../Imagenes/PiesAmbulacrales2.jpg" style="height: 300px; margin-right: 15px"
+          alt="Imagen de los pies ambulacrales de una estrella de mar">
+        Los equinodermos poseen un sistema complejo de conductos y reservorios
+        llenos de líquido que accionan hidráulicamente unos salientes llamados
+        pies ambulacrales, los cuales ayudan en la locomoción, el intercambio
+        gaseoso, la alimentación, la fijación al sustrato y la percepción
+        sensorial.
+      </p>
+      <p>
+        La alimentación de los equinodermos varía según la especie. Algunos
+        son filtradores y se alimentan de partículas en suspensión en el agua,
+        como plancton y detritos. Otros son carnívoros y se alimentan de
+        moluscos, crustáceos u otros invertebrados marinos. Algunos
+        equinodermos, como los erizos de mar, tienen una estructura bucal
+        especializada que utilizan para raspar algas u otros organismos
+        adheridos a las rocas.
+      </p>
+
+      <figure style="text-align: center">
+        <img src="../Imagenes/Regeneracion.jpeg" style="height: 300px; margin: 15px; display: inline-block"
+          alt="Esquema de la regeneración de una estrella de mar">
+        <figcaption>
+          La reproducción de los equinodermos es mayormente sexual, aunque
+          también tienen la capacidad de regenerar partes de su cuerpo, lo que
+          les permite reproducirse asexualmente mediante la división o la
+          regeneración de fragmentos.
+        </figcaption>
+      </figure>
+
+      <br>
+
+      <p>
+        Los equinodermos desempeñan un papel ecológico importante en los
+        ecosistemas marinos. Algunas estrellas de mar se alimentan de moluscos
+        que pueden convertirse en plagas, ayudando a mantener un equilibrio en
+        las poblaciones de estos organismos. Además, los erizos de mar
+        desempeñan un papel vital en la salud de los arrecifes de coral al
+        controlar el crecimiento de algas y permitir que los corales
+        prosperen.
+      </p>
+      <figure style="text-align: center">
+        <img src="../Imagenes/ErizosDeMar.jpg" style="height: 300px" alt="Erizos de mar alimentándose de algas">
+        <figcaption>
+          Erizos de mar alimentándose de algas
+        </figcaption>
+      </figure>
+
+      <br><br><br>
+
+      <div id="subtitulo">Equinodermos en Argentina</div>
+      <br><br>
+      <div id="contenedorCarruselArg">
+        <div id="carruselArg"></div>
+        <button id="botonAnterior">
+          <img src="../Imagenes/FlechaDerecha.png" alt="Imagen de una flecha utilizada para ver la foto anterior">
+        </button>
+        <button id="botonSiguiente">
+          <img src="../Imagenes/FlechaDerecha.png" alt="Imagen de una flecha utilizada para ver la foto siguiente">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var $carruselArg = document.getElementById("carruselArg");
+    var $botonAnterior = document.getElementById("botonAnterior");
+    var $botonSiguiente = document.getElementById("botonSiguiente");
+    var $imagenesArg = [
+      "../Imagenes/CarruselEquinodermos/8.jpeg",
+      "../Imagenes/CarruselEquinodermos/9.jpg",
+      "../Imagenes/CarruselEquinodermos/10.jpg",
+      "../Imagenes/CarruselEquinodermos/11.jpg",
+      "../Imagenes/CarruselEquinodermos/12.jpg",
+      "../Imagenes/CarruselEquinodermos/13.jpg",
+      "../Imagenes/CarruselEquinodermos/14.jpeg",
+      "../Imagenes/CarruselEquinodermos/15.jpeg",
+      "../Imagenes/CarruselEquinodermos/16.jpg",
+      "../Imagenes/CarruselEquinodermos/17.jpeg",
+      "../Imagenes/CarruselEquinodermos/18.jpeg",
+      "../Imagenes/CarruselEquinodermos/19.jpg",
+      "../Imagenes/CarruselEquinodermos/20.jpg",
+
+    ];
+
+    inicializarCarruselInteractivo(
+      $carruselArg,
+      $botonAnterior,
+      $botonSiguiente,
+      $imagenesArg
+    );
+  </script>
+
+  <div id="pie">
+    <span class="datoPie">Copyright 2023 © Mundo Marino</span>
+    |
+    <span class="datoPie"><a href="../ArchivosDelPie/AvisoLegal.html">Aviso Legal</a></span>
+    |
+    <span class="datoPie"><a href="../ArchivosDelPie/PoliticaCookies.html">Política de Cookies</a></span>
+    |
+    <span class="datoPie"><a href="../ArchivosDelPie/PoliticaPrivacidad.html">Política de Privacidad</a></span>
+  </div>
+</body>
+
+</html>

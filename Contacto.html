@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="Contacto.css">
+    <script src="Contacto.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Captura el formulario por su ID
+            var form = document.getElementById('form');
+
+            // Agrega un controlador de eventos para el evento 'submit'
+            form.addEventListener('submit', function (event) {
+                // Evita que el formulario se envíe
+                event.preventDefault();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="banner">
+        <h1 style="font-size: 3vw;">Contacto</h1>
+        <div id="menu">
+            <a class="opcionMenu" href="Inicio.html">Inicio</a>
+            |
+            <a class="opcionMenu" href="Explorar.html">Explorar</a>
+            |
+            <a class="opcionMenu" href="Quiz.html">Quiz</a>
+            |
+            <a class="opcionMenu" href="SobreMi.html">Sobre Mí</a>
+            |
+            <a class="opcionMenu" href="Contacto.html">Contacto</a>
+        </div>
+    </div>
+
+<div id="contenedor">
+    <div id="contacto">
+        <h2 id="tituloFormulario">¡Contactate conmigo!</h2>
+        <form id="form">
+            <div>
+                <div class="fila">
+                    <div class="columna">
+                        <label>Nombre: <span class="obligatorio">*</span></label>
+                        <input type="text" placeholder="Nombre" id="nombre">
+                    </div>
+                    <div class="columna">
+                        <label>Apellido: <span class="obligatorio">*</span></label>
+                        <input type="text" placeholder="Apellido" id="apellido">
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="columna">
+                        <label>Fecha de nacimiento: </label>
+                        <div style="width: 50%;" id="ordenar">
+                            <input type="text" id="dia" name="dia" placeholder="D&iacute;a" style="order: 1;">
+                            <input type="text" id="mes" name="mes" placeholder="Mes" style="order: 2;">
+                            <input type="text" id="anio" name="anio" placeholder="A&ntilde;o" style="order: 3;">
+                        </div>
+                    </div>
+                    <div class="columna">
+                        <label>Teléfono: </label>
+                        <input type="text" placeholder="Código de área sin 0 y teléfono sin 15" id="telefono">
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="columna">
+                        <label>Correo electrónico: <span class="obligatorio">*</span></label>
+                        <input type="text" placeholder="Correo@dominio.com" id="correo">
+                    </div>
+                    <div class="columna">
+                        <label>Provincia: <span class="obligatorio">*</span></label>
+                        <select id="provincia">
+                            <option id="opcionPlaceholder">Seleccione su provincia</option>
+                            <option>Buenos Aires</option>
+                            <option>Ciudad Autónoma de Buenos Aires</option>
+                            <option>Catamarca</option>
+                            <option>Chaco</option>
+                            <option>Chubut</option>
+                            <option>Córdoba</option>
+                            <option>Corrientes</option>
+                            <option>Entre Ríos</option>
+                            <option>Formosa</option>
+                            <option>Jujuy</option>
+                            <option>La Pampa</option>
+                            <option>La Rioja</option>
+                            <option>Mendoza</option>
+                            <option>Misiones</option>
+                            <option>Neuquén</option>
+                            <option>Río Negro</option>
+                            <option>Salta</option>
+                            <option>San Juan</option>
+                            <option>San Luis</option>
+                            <option>Santa Cruz</option>
+                            <option>Santa Fe</option>
+                            <option>Santiago del Estero</option>
+                            <option>Tierra del Fuego</option>
+                            <option>Tucumán</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="columna" style="width: 100%;">
+                        <label style="height: 300px;">Mensaje: <span class="obligatorio">*</span></label>
+                        <textarea id="mensaje"></textarea>
+                    </div>
+                </div>
+                <div class="fila" style="height: 40px;">
+                    <input type="submit" id="submit" onclick="return validar();">
+                </div>
+                <div style="padding-left: 20px;">Los datos con <span class="obligatorio">*</span> son obligatorios.
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="errores"></div>
+</div>
+
+    <div id="pie">
+        <span class="datoPie">Copyright 2023 © Mundo Marino</span>
+        |
+        <span class="datoPie"><a href="ArchivosDelPie/AvisoLegal.html">Aviso Legal</a></span>
+        |
+        <span class="datoPie"><a href="ArchivosDelPie/PoliticaCookies.html">Política de Cookies</a></span>
+        |
+        <span class="datoPie"><a href="ArchivosDelPie/PoliticaPrivacidad.html">Política de Privacidad</a></span>
+    </div>
+</body>
+
+</html>

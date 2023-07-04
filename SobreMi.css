@@ -1,0 +1,101 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    background-color: #F6F1F1;
+    background: url("Imagenes/Pattern.png") repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#pie {
+    font-size: 15px;
+    position: absolute;
+    top: 900px;
+    color: #146C94;
+    padding-left: 15px;
+}
+
+#banner {
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    z-index: 999;
+    display: flex;
+    color: #146C94;
+    height: 5vw;
+    padding-left: 25px;
+    padding-right: 25px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F6F1F1;
+    opacity: 0.8;
+}
+
+.opcionMenu,
+.datoPie {
+    margin: 0.5em;
+}
+#menu {
+    font-size: 1.5vw;
+    text-align: right;
+    font-weight: bold;
+}
+
+a:link {
+    color: #146C94;
+}
+
+a:visited {
+    color: #146C94;
+}
+
+a:hover {
+    color: #AFD3E2;
+}
+
+a:active {
+    color: #19A7CE;
+}
+
+a {
+    text-decoration: none;
+}
+
+#info {
+    height: 700px;
+    width: 1000px;
+    position: relative;
+    left: 50%;
+    margin-left: -500px;
+    top: 50%;
+    margin-top: -350px;
+    background-color: rgba(246, 241, 241,.6);
+    padding: 15px;
+    border-radius: 10px;
+    border: 5px #dfd5d5 double;
+    color: #146C94;
+}
+
+#titulo{
+    text-align: center;
+    width: 350px;
+    font-size: 50px;
+    position: relative;
+    left: 50%;
+    margin-left: -175px;
+}
+
+p{
+    font-size: 22px;
+    height: 10%;
+    margin: 15px;
+    text-align: justify;
+}
+
+#sobre-mi{
+    position: absolute;
+    top: 50%;
+    margin: -200px 10px 0 -5px;
+    padding: 0;
+}

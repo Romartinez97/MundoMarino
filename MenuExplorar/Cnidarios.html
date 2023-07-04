@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cnidarios</title>
+    <link rel="stylesheet" href="Cnidarios.css">
+    <script src="Carrusel.js"></script>
+</head>
+
+<body>
+    <div id="banner">
+        <h1 style="font-size: 3vw;">Cnidarios</h1>
+        <div id="menu">
+            <a class="opcionMenu" href="../Inicio.html">Inicio</a>
+            |
+            <a class="opcionMenu" href="../Explorar.html">Explorar</a>
+            |
+            <a class="opcionMenu" href="../Quiz.html">Quiz</a>
+            |
+            <a class="opcionMenu" href="../SobreMi.html">Sobre Mí</a>
+            |
+            <a class="opcionMenu" href="../Contacto.html">Contacto</a>
+        </div>
+    </div>
+
+
+    <div id="info">
+        <h2 id="titulo">Cnidarios</h2>
+        <div id="carruselFotos"></div>
+        <script>
+            var $imagenesInicio = [
+                "../Imagenes/CarruselCnidarios/15.jpg",
+                "../Imagenes/CarruselCnidarios/16.jpg",
+                "../Imagenes/CarruselCnidarios/17.jpg",
+                "../Imagenes/CarruselCnidarios/18.jpg",
+                "../Imagenes/CarruselCnidarios/19.jfif",
+                "../Imagenes/CarruselCnidarios/20.jpg",
+            ];
+
+            inicializarCarrusel($imagenesInicio);
+        </script>
+        <br>
+        <div>
+            <p>
+                Los cnidarios (Cnidaria, del griego <span class="cursiva">knide</span>,
+                "ortiga") son un filo de
+                animales invertebrados que incluye a las medusas, las anémonas de mar, los corales y las hidras. Son
+                conocidos por su característica distintiva: los cnidoblastos, células especializadas que funcionan
+                como cavidad en
+                donde se encuentran guardados los cnidocitos, que son cápsulas en donde se almacena el veneno y son
+                lanzadas mediante un filamento hacia la presa, enganchándola con un aguijón para poder liberar las
+                toxinas que les permiten a los cnidarios capturar presas y defenderse.
+                <br>
+                Los cnidarios son exclusivamente acuáticos y son marinos en un 99% mientras que el resto habita en
+                aguas dulce.
+                <br>
+                Algunos cnidarios tienen una forma de vida bentónica, anclados al sustrato, mientras
+                que otros son planctónicos y flotan libremente en el agua.
+            </p>
+            <br>
+            <div style="display: flex; align-items: center;">
+                <img src="../Imagenes/Polipo-medusa.png" style="height: 300px; margin-right: 15px;"
+                    alt="Imagen de un ejemplo de un pólipo y una medusa">
+                <p>
+                    La mayoría de los cnidarios tienen una forma de vida polimórfica, lo que significa que pueden
+                    alternar entre dos formas corporales distintas: el pólipo y la medusa. Los pólipos son sésiles,
+                    es
+                    decir que permanecen adheridos al sustrato, mientras que las medusas son móviles y nadan en el
+                    agua.
+                    Ambas formas tienen tentáculos rodeando la boca, que utilizan para capturar pequeños organismos.
+                </p>
+            </div>
+            <br>
+            <p>
+                La reproducción en los cnidarios puede ser sexual o asexual. La reproducción sexual implica la
+                liberación de gametos masculinos y femeninos, que se unen para formar una larva que se desarrolla en
+                un individuo adulto. La reproducción asexual ocurre mediante brotes laterales o fragmentación, donde
+                una parte del animal se separa y se convierte en un individuo completo.
+            </p>
+
+            <figure style="text-align: center; margin-top: 40px;">
+                <img src="../Imagenes/Corales.webp" style="height: 400px; display: inline-block;">
+                <figcaption style="margin-top: 10px;">Los cnidarios desempeñan un papel importante en los ecosistemas marinos. Los corales,
+                    por ejemplo,
+                    forman arrecifes que albergan una gran diversidad de vida marina y actúan como barreras
+                    protectoras
+                    contra tormentas y erosión costera.</figcaption>
+            </figure>
+
+            <br><br><br>
+
+            <div id="subtitulo">Cnidarios en Argentina</div>
+            <br><br>
+            <div id="contenedorCarruselArg">
+                <div id="carruselArg"></div>
+                <button id="botonAnterior"><img src="../Imagenes/FlechaDerecha.png"
+                        alt="Imagen de una flecha utilizada para ver la foto anterior"></button>
+                <button id="botonSiguiente"> <img src="../Imagenes/FlechaDerecha.png"
+                        alt="Imagen de una flecha utilizada para ver la foto siguiente"></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var $carruselArg = document.getElementById('carruselArg');
+        var $botonAnterior = document.getElementById('botonAnterior');
+        var $botonSiguiente = document.getElementById('botonSiguiente');
+        var $imagenesArg = [
+            "../Imagenes/CarruselCnidarios/1.jpeg",
+            "../Imagenes/CarruselCnidarios/2.jpeg",
+            "../Imagenes/CarruselCnidarios/3.jpg",
+            "../Imagenes/CarruselCnidarios/4.jpg",
+            "../Imagenes/CarruselCnidarios/5.jpeg",
+            "../Imagenes/CarruselCnidarios/6.jpeg",
+            "../Imagenes/CarruselCnidarios/7.jpg",
+            "../Imagenes/CarruselCnidarios/8.jpeg",
+            "../Imagenes/CarruselCnidarios/9.jpeg",
+            "../Imagenes/CarruselCnidarios/10.jpeg",
+            "../Imagenes/CarruselCnidarios/11.jfif",
+            "../Imagenes/CarruselCnidarios/12.jpg",
+            "../Imagenes/CarruselCnidarios/13.jpg",
+            "../Imagenes/CarruselCnidarios/14.jpeg"
+        ];
+
+        inicializarCarruselInteractivo($carruselArg, $botonAnterior, $botonSiguiente, $imagenesArg);
+    </script>
+
+
+
+
+
+
+
+    <div id="pie">
+        <span class="datoPie">Copyright 2023 © Mundo Marino</span>
+        |
+        <span class="datoPie"><a href="../ArchivosDelPie/AvisoLegal.html">Aviso Legal</a></span>
+        |
+        <span class="datoPie"><a href="../ArchivosDelPie/PoliticaCookies.html">Política de Cookies</a></span>
+        |
+        <span class="datoPie"><a href="../ArchivosDelPie/PoliticaPrivacidad.html">Política de Privacidad</a></span>
+    </div>
+</body>
+
+</html>

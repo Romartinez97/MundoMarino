@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crustaceos</title>
+    <link rel="stylesheet" href="Crustaceos.css">
+    <script src="Carrusel.js"></script>
+</head>
+
+<body>
+    <div id="banner">
+        <h1 style="font-size: 3vw;">Crustáceos</h1>
+        <div id="menu">
+            <a class="opcionMenu" href="../Inicio.html">Inicio</a>
+            |
+            <a class="opcionMenu" href="../Explorar.html">Explorar</a>
+            |
+            <a class="opcionMenu" href="../Quiz.html">Quiz</a>
+            |
+            <a class="opcionMenu" href="../SobreMi.html">Sobre Mí</a>
+            |
+            <a class="opcionMenu" href="../Contacto.html">Contacto</a>
+        </div>
+    </div>
+
+
+    <div id="info">
+        <h2 id="titulo">Crustáceos</h2>
+        <div id="carruselFotos"></div>
+        <script>
+            var $imagenesInicio = [
+                "../Imagenes/CarruselCrustaceos/1.jpg",
+                "../Imagenes/CarruselCrustaceos/2.jpg",
+                "../Imagenes/CarruselCrustaceos/3.jpg",
+                "../Imagenes/CarruselCrustaceos/4.webp",
+                "../Imagenes/CarruselCrustaceos/5.jpg",
+                "../Imagenes/CarruselCrustaceos/6.png",
+            ];
+
+            inicializarCarrusel($imagenesInicio);
+        </script>
+        <br>
+        <div>
+            <p>
+                Los crustáceos (Crustacea; del latín <span class="cursiva">crusta</span>,
+                "costra" y <span class="cursiva">aceum</span>, "relación o naturaleza de algo") son un
+                extenso subfilo de artrópodos que incluye a animales como langostas, cangrejos, y krill.
+                <br>
+                Como casi todos los artrópodos, los crustáceos se caracterizan por poseer un exoesqueleto articulado, el
+                cual les brinda soporte y protección. A medida que crecen deben mudar su exoesqueleto en un proceso
+                llamado muda, para poder crecer y adaptarse a su tamaño corporal en constante cambio.
+            </p>
+            <br>
+            <div style="display: flex; align-items: center;">
+                <img src="../Imagenes/CrustaceoEstructura.jpg" style="height: 300px; margin-right: 15px;"
+                    alt="Esquema de la estructura de un crustáceo">
+                <p>
+                    Los crustáceos son los únicos artrópodos con dos pares de antenas, tienen al menos un par de maxilas
+                    y tienen múltiples pares de apéndices, como patas y pinzas, que utilizan para desplazarse,
+                    alimentarse y defenderse. Algunos crustáceos, como los cangrejos ermitaños, tienen la habilidad de
+                    adaptarse y cambiar de concha a medida que crecen, utilizando conchas abandonadas de otros animales
+                    para proteger su cuerpo blando.
+                </p>
+            </div>
+            <br>
+            <p>
+                La alimentación de los crustáceos es diversa; algunos son filtradores, como los pequeños camarones que
+                se alimentan de partículas en suspensión en el agua, otros son depredadores o carroñeros, como los
+                cangrejos y langostas que se alimentan de moluscos, peces muertos u otros organismos marinos, y también
+                hay crustáceos herbívoros que se alimentan de algas y detritos.
+            </p>
+
+            <p style="display: flex; align-items: center;">
+
+                <img src="../Imagenes/LarvaNauplius.jpg" style="height: 300px; margin: 15px;"
+                    alt="Imagen de una narva nauplio">
+                La mayoría de los crustáceos se reproduce sexualmente. En los
+                casos que no hay reproducción sexual, la hembra produce huevos viables sin necesidad de fertilización
+                por un macho.
+                <br><br>
+                Algunas especies tienen un ciclo de vida complejo, donde las crías eclosionan de huevos y pasan por
+                varias etapas larvarias antes de convertirse en adultos.
+                Una característica propia del grupo es la presencia de la larva nauplio, provista de un ojo naupliano en
+                alguna etapa de su vida, que puede ser sustituido más tarde por dos ojos compuestos.
+            </p>
+
+            <figure style="text-align: center;">
+                <img src="../Imagenes/CriaCangrejos.webp" style="height: 300px; margin: 15px; display: inline-block;">
+                <figcaption>Algunos crustáceos, como los cangrejos, tienen
+                    reproducción directa, donde las crías se desarrollan dentro de los huevos y emergen como miniaturas
+                    de
+                    sus padres.</figcaption>
+            </figure>
+
+            <br>
+
+            <p>Estas criaturas son vitales en los ecosistemas acuáticos. Muchos crustáceos, como los copépodos y krill,
+                son una fuente importante de alimento para peces y otros animales marinos. Además, algunos crustáceos,
+                como los camarones limpiadores, desempeñan un papel crucial en la limpieza de parásitos de otros peces,
+                manteniendo así la salud de las poblaciones marinas.</p>
+            <figure style="text-align: center;">
+                <img src="../Imagenes/BallenaKrill.webp" style="height: 300px;">
+                <figcaption>Ballena próxima a un banco de krill del cual se alimentará</figcaption>
+            </figure>
+
+            <br><br><br>
+
+            <div id="subtitulo">Crustáceos en Argentina</div>
+            <br><br>
+            <div id="contenedorCarruselArg">
+                <div id="carruselArg"></div>
+                <button id="botonAnterior"><img src="../Imagenes/FlechaDerecha.png"
+                        alt="Imagen de una flecha utilizada para ver la foto anterior"></button>
+                <button id="botonSiguiente"> <img src="../Imagenes/FlechaDerecha.png"
+                        alt="Imagen de una flecha utilizada para ver la foto siguiente"></button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var $carruselArg = document.getElementById('carruselArg');
+        var $botonAnterior = document.getElementById('botonAnterior');
+        var $botonSiguiente = document.getElementById('botonSiguiente');
+        var $imagenesArg = [
+            "../Imagenes/CarruselCrustaceos/7.jpeg",
+            "../Imagenes/CarruselCrustaceos/8.jpeg",
+            "../Imagenes/CarruselCrustaceos/9.jpg",
+            "../Imagenes/CarruselCrustaceos/10.jpg",
+            "../Imagenes/CarruselCrustaceos/11.jpeg",
+            "../Imagenes/CarruselCrustaceos/12.jpg",
+            "../Imagenes/CarruselCrustaceos/13.jpeg",
+            "../Imagenes/CarruselCrustaceos/14.jpeg",
+            "../Imagenes/CarruselCrustaceos/15.jpeg",
+            "../Imagenes/CarruselCrustaceos/16.jpeg",
+        ];
+
+        inicializarCarruselInteractivo($carruselArg, $botonAnterior, $botonSiguiente, $imagenesArg);
+    </script>
+
+
+
+
+
+
+
+
+    <div id="pie">
+        <span class="datoPie">Copyright 2023 © Mundo Marino</span>
+        |
+        <span class="datoPie"><a href="../ArchivosDelPie/AvisoLegal.html">Aviso Legal</a></span>
+        |
+        <span class="datoPie"><a href="../ArchivosDelPie/PoliticaCookies.html">Política de Cookies</a></span>
+        |
+        <span class="datoPie"><a href="../ArchivosDelPie/PoliticaPrivacidad.html">Política de Privacidad</a></span>
+    </div>
+</body>
+
+</html>
